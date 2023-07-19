@@ -1,0 +1,22 @@
+{
+    "name": "chandan/test",
+    "description": "Magento module for syncing customer data to a third-party system",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [{
+        "name": "chandan singh",
+        "email": "chandancstp@gmail.com"
+    }],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Chandan\\Test\\": ""
+        }
+    }
+}

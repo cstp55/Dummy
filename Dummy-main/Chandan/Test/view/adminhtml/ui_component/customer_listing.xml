@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="sync_customer">
+                <settings>
+                    <confirm>
+                            <message translate="true">Are you sure you want to sync the selected customers?</message>
+                            <title translate="true">sync customer</title>
+                        </confirm>
+                    <type>sync_customer</type>
+                    <label translate="true">Sync Customer</label>
+                    <url path="test/customer/sync"/>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+    <columns name="customer_columns" class="Magento\Customer\Ui\Component\Listing\Columns">
+        <column name="sync_status" class="Chandan\Test\Ui\Component\Listing\Column\SyncStatus">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">select</item>
+                    <item name="editor" xsi:type="string">select</item>
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/select</item>
+                    <item name="dataType" xsi:type="string">select</item>
+                    <item name="label" xsi:type="string" translate="true">Sync Status</item>
+                    <item name="sortOrder" xsi:type="number">51</item>
+                </item>
+            </argument>
+        </column>
+    </columns>    
+</listing>

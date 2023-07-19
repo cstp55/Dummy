@@ -1,0 +1,19 @@
+#Feature
+Sync customer data using third party api
+1. I have create module
+2. Create Sync controller for manually sync customer data
+3. Create event and observer for when create any new user then sync automatic data
+4. Used the depencies injection design pattern.
+5. Create the admin configuration for save custom api end and module enable disable Feature
+6. Create helper data for common used method
+7. Create Model for our business logic.
+
+For optimze our code add extra point
+1. create a sync_status column in customer grid
+2. Help of sync_status admin know which customer data not sync
+3. default value of sync is 0 after sync that cloumn value 1
+4. In api send selected data using customer grid
+5. Also have option to filter grid using sync_status
+
+@# other way to add this feature using magento consumer and  message queue consumers conscept for this type of bulk sync process
+Magento also use this conscept in inventry modue.
